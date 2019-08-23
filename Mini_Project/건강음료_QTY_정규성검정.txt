@@ -1,0 +1,23 @@
+## 건강음료 QTY 정규성 검정
+
+# Dependency
+import pandas as pd
+from scipy import stats
+
+# Load dataset
+df= pd.read_csv('data/sales.csv', engine='python')
+df = df.iloc[:,:9]
+df.head()
+
+# Filtering category
+df2 = df[df.CATEGORY == '건강음료']
+df2.head()
+
+# Save dataset
+df2.to_csv('sales_건강음료.csv', mode='w', index=False, encoding='euc-kr')
+
+# Dependent varialble(QTY) - Normality Test
+y = df.QTY
+
+w, p = stats.shapiro(y)
+print("[Weight: %.4f, P-value: %.4f" % (w, p))
