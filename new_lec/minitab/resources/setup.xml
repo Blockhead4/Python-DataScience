@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Setup>
+  <Product Name="Minitab16">
+    <PackageRef Path="LanguagePacks\en-US\LanguagePack.msi" />
+    <PackageRef Path="Core\Core.msi" />
+    <PackageRef Path="License\SU\Licensing.msi" />
+  </Product>
+  <Product Name="Bootstrapper">
+    <PackageRef Path="Bootstrapper\Bootstrapper.msi" />
+  </Product>
+  <Product Name="SoftwareManager">
+    <PackageRef Path="SoftwareManager\SoftwareManager.msi" />
+  </Product>
+</Setup>
