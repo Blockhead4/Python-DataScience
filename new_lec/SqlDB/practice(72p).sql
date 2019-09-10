@@ -1,4 +1,5 @@
 --## SQL 실전문제
+
 -- Q3
 DESC SALGRADE;
 -- Q4
